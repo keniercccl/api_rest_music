@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt");
 const validate = require("../helpers/validate");
-const User = require("../models/User");
+const User = require("../models/user");
 const jwt = require("../helpers/jwt");
 const fs = require("fs");
 const path = require("path");
