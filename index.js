@@ -15,6 +15,10 @@ const limiter = rateLimit({
   max: 100
 });
 
+console.log("MONGO_URI existe:", !!process.env.MONGO_URI);
+console.log("JWT_SECRET existe:", !!process.env.JWT_SECRET);
+console.log("PORT:", process.env.PORT);
+
 // Ejecutar conexion a base de datos
 (async () => {
   await connection();
