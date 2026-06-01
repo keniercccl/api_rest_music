@@ -7,6 +7,9 @@ const connection = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
 
+    console.log("URI definida:", !!process.env.MONGO_URI);
+    console.log("URI empieza por:", process.env.MONGO_URI?.substring(0, 25));
+
     console.log("MongoDB conectado correctament");
   } catch (error) {
     console.log(error);
