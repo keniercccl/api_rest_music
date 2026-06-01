@@ -12,8 +12,11 @@ const connection = async () => {
 
     console.log("MongoDB conectado correctament");
   } catch (error) {
-    console.log(error);
-    throw new Error("No se pudo conectar a la base de datos");
+    console.error("ERROR MONGODB");
+    console.error(error.message);
+    console.error(error);
+
+    throw error;
   }
 };
 
