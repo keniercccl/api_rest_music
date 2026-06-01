@@ -1,0 +1,10 @@
+node_modules/
+.env
+
+uploads/albums/*
+uploads/artists/*
+uploads/avatars/*
+uploads/songs/*
+
+*.log
+.DS_Store
